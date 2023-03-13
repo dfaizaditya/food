@@ -1,0 +1,31 @@
+/* Small devices ( >= 600px ) */
+@media only screen and (min-width: 600px) {
+    .main-content__title {
+           margin-bottom: 1rem;
+    }
+
+    #restaurant-list {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           grid-column-gap: 1.5rem;
+           grid-row-gap: 1.5rem;
+    }
+}
+
+/* Medium devices ( >= 768px ) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices ( >= 992px ) */
+@media only screen and (min-width: 992px) {
+    #restaurant-list {
+           display: grid;
+           grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Extra large devices ( >= 1200px ) */
+@media only screen and (min-width: 1200px) {
+    main {
+           width: 100%;
+    }
+}
