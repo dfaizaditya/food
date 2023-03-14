@@ -1,4 +1,4 @@
-import RestaurantSource from '../../data/restaurant-sources';
+import RestaurantApiSource from '../../data/restaurantapi-source';
 import { createRestaurantItemTemplate } from '../templates/template-creator';
 
 const RestaurantList = {
@@ -22,7 +22,7 @@ const RestaurantList = {
   },
 
   async afterRender() {
-    const restaurants = await RestaurantSource.restaurantList();
+    const restaurants = await RestaurantApiSource.restaurantList();
     const restaurantsContainer = document.querySelector('.list-restoran');
 
     restaurants.forEach((restaurant) => {
